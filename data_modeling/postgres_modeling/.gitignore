@@ -1,0 +1,71 @@
+# Ignore Vagrant files
+.vagrant/
+
+# Ignore idea files
+.idea/
+
+# Ingore log files
+*console.log
+
+#  Local .terraform directories
+**/.terraform/*
+.terraform/
+
+# .tfstate files
+*.tfstate
+*.tfstate.*
+
+# .tfvars files
+*.tfvars
+.pem
+.ppk
+.DS_Store
+
+######################
+######   Maven  ######
+######################
+
+**/target/
+pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.versionsBackup
+pom.xml.next
+release.properties
+dependency-reduced-pom.xml
+buildNumber.properties
+.mvn/timing.properties
+
+# Avoid ignoring Maven wrapper jar file (.jar files are usually ignored)
+!/.mvn/wrapper/maven-wrapper.jar
+
+### VSCode Java Extension
+**/.settings/org.eclipse.jdt.apt.core.prefs
+**/.settings/org.eclipse.jdt.core.prefs
+**/.settings/org.eclipse.core.resources.prefs
+.classpath
+.factorypath
+.project
+
+### Intellij Patch ###
+# Comment Reason: https://github.com/joeblau/gitignore.io/issues/186#issuecomment-215987721
+
+*.iml
+# modules.xml
+# .idea/misc.xml
+# *.ipr
+
+# Sonarlint plugin
+.idea/sonarlint
+
+# End of https://www.gitignore.io/api/intellij
+/infrastructure/load_test/results/
+/infrastructure/terraform/modules/services/lambda-es-cleanup/lambda_python/build/*
+/infrastructure/load_test/target/
+
+# Visual Studio excludes
+*.suo
+*.sqlite
+
+infrastructure/terraform/wrapper.properties
+infrastructure/ansible/roles/_test/molecule/**/*.log
+*.pyc
