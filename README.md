@@ -1,5 +1,5 @@
 
-#Udacity Data Engineering Nanodegree. 
+Udacity Data Engineering Nanodegree. 
 
 The course is broken up into five sections, Data Modeling, Cloud Data Warehouses, Data Lake with Spark, Data Pipelines with Airflow, and a capstone project. 
 The structure for each section consists of introducing concepts through lectures, demos and exercises, and concludes with 1-2 project(s). 
