@@ -66,5 +66,5 @@ Before executing the the udacity_example_dag add following connections to Airflo
 - AWS credentials with connection_id : **_aws_credentials_**
 - Postgres connection with connection_id : **_redshift_**
 
-| WARNING: YOU AWS_KEY and SECRET_KEY will be locally stored in the log files in the logs directory. Make sure that you never push these logs to GIT or generally publish them to the internet! |
+| WARNING: YOU AWS_KEY and SECRET_KEY will be locally stored in the log files in the logs directory. Make sure that you never push local logs to GIT or  publish them to the internet! |
 | --- |

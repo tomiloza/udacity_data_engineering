@@ -69,4 +69,4 @@ buildNumber.properties
 infrastructure/terraform/wrapper.properties
 infrastructure/ansible/roles/_test/molecule/**/*.log
 *.pyc
-/data_pipelines/logs/*
+/4_data_pipelines/logs/*

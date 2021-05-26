@@ -5,10 +5,10 @@ The structure for each section consists of introducing concepts through lectures
 In the projects it is necessary to design an ETL process using song data for an imaginary company called *Sparkify*.
 Desing data models, build data warehouses and data lakes, automate data pipelines, and work with massive datasets
 
-* Course 1: Data Modeling
-* Course 2: Cloud Data Warehouses
-* Course 3: Spark and Data Lakes
-* Course 4: Data pipelines with Airflow
-* Course 5: Capstone Project
+* Course 1: [Data Modeling](./1_data_modeling/)
+* Course 2: [Cloud Data Warehouses](./2_cloud_data_warehouses)
+* Course 3: [Spark and Data Lakes](./3_data_lakes_spark)
+* Course 4: [Data pipelines with Airflow](./4_data_pipelines)
+* Course 5: [Capstone Project](./5_capstone_project)
 
 
