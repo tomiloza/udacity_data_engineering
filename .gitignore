@@ -70,3 +70,6 @@ infrastructure/terraform/wrapper.properties
 infrastructure/ansible/roles/_test/molecule/**/*.log
 *.pyc
 /4_data_pipelines/logs/*
+/5_capstone_project/datasets/i94_apr16_sub.sas7bdat
+/5_capstone_project/.ipynb_checkpoints/
+/5_capstone_project/datasets/18-83510-I94-Data-2016/i94_apr16_sub.sas7bdat
