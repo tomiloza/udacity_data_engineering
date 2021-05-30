@@ -26,7 +26,7 @@ The project follows the follow steps:
 For this project Apache Spark will be used for analyzing the datasets and preparing the data. Following datasets will be
 used: I94 Immigration Data and the U.S. City Demographic Data As the immigration dataset is very large we will use the
 data for APRIL 2016, this dataset allows contains over 3 million rows so this should be enough for fulfilling the
-project scope regrading the number of recrods. To additionaly enrich the data the demographic data is loaded to be able
+project scope regrading the number of records. To additional enrich the data the demographic data is loaded to be able
 to analyze correlations bettwen these datasets.
 
 The data is load into datasets and cleaned of NaN values or empty rows. Additional dimension tables are generated out of
@@ -80,8 +80,8 @@ We will frist try to find the columns containing most of the missing values. As 
 has more the 70% missing values it will be removed from the dataset.
 ![Datamodel_missing_demo](img/missing_demographics.png)
 
-As we don't have a significat NaN values in certain columns we will continue with searching other data inconsistency. We
-will continue do check if there are duplicate values or Nan values. As primary key multiple columns must be
+As we don't have a significant NaN values in certain columns we will continue with searching other data inconsistency. We
+will continue to do check if there are duplicate values or Nan values. As primary key multiple columns must be
 used: `'City','Race','State Code'`
 
 ```
@@ -241,7 +241,7 @@ def data_quality_check_immigration(spark, immigration_fact, dimension_port_code,
 
 <br/><br/>
 
-**dim_port_code** 
+**dim_port_code**
 
 | Column        | Description   |
 | :------------- |:-------------|
@@ -250,7 +250,7 @@ def data_quality_check_immigration(spark, immigration_fact, dimension_port_code,
 | state      | airport state|
 
 <br/><br/>
-**dim_demographics** 
+**dim_demographics**
 
 | Column        | Description   |
 | :-------------- |:-------------|
@@ -289,9 +289,8 @@ def data_quality_check_immigration(spark, immigration_fact, dimension_port_code,
 | arr_weekday      | arrival weekday|    
 | id      | unique key|  
 
-
-
 #### Step 5: Complete Project Write Up
+
 <div style="text-align: left;"> 
 
 Following tehnologies has been used for the project:
@@ -326,7 +325,8 @@ immigration fact table which is partitioned by month.
 *If the database needed to be accessed by 100+ people*
 
 - Amazon Redshfit can be used if the data needs cerain access priviliges. Additionaly adding more nodes to Redshift or
-  bigger cluster will help us to deal with the necessary write scaling 
+  bigger cluster will help us to deal with the necessary write scaling
+
 </div>
 
 #### Step 6: Execution and file description
@@ -342,10 +342,10 @@ immigration fact table which is partitioned by month.
     ├── capstone.cfg        [configuration file for dataset paths] 
     ├── etl.py              [Python ETL script used for data load transformations]
 
-
 Explanation of single files and operators:
 
 [` workspace files`] :
+
 - `Capstone Project Template.ipynb`- Jupyter notebook used for analysis of dataset.
 - `capstone.cfg `: Configuration file contains all paths to dataset files and flag or local or remote execution
 - `etl.py `:  Ptyhon ETL file for processing the datasets and performing all operations
@@ -355,6 +355,7 @@ To start ETL pipeline just:
 ```
 python3 etl.py
 ```
+
 Execution example:
 ![Datamodel_result](img/etl_result.png)
 
